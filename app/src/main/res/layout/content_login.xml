@@ -22,10 +22,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="#913D88"
-            android:paddingLeft="120px"
-            android:paddingRight="120px"
-            android:paddingTop="30px"
-            android:paddingBottom="100px">
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:paddingTop="20px"
+            android:paddingBottom="45px">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textColor="#ffffff"
-                android:layout_marginBottom="120px"
+                android:layout_marginBottom="25px"
                 android:id="@+id/headerLoginPage"/>
 
             <EditText
@@ -45,10 +45,9 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Email"
+                android:textColor="#ffffff"
                 android:textColorHint="#ffffff"
-                android:id="@+id/email"
-                android:singleLine="false"
-                android:selectAllOnFocus="false" />
+                android:id="@+id/email"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -57,6 +56,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:hint="Password"
+                android:textColor="#ffffff"
                 android:textColorHint="#ffffff"
                 android:id="@+id/password"/>
 
@@ -69,7 +69,7 @@
             android:textColor="#ffffff"
             android:background="#59ABE3"
             android:id="@+id/btn_login"
-            android:layout_marginTop="40px"
+            android:layout_marginTop="20px"
             android:layout_gravity="center" />
 
     </LinearLayout>
