@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.task.taskthree.signupandlogin.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FDE3A7">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#913D88"
+            android:paddingLeft="120px"
+            android:paddingRight="120px"
+            android:paddingTop="30px"
+            android:paddingBottom="100px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Login Page"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="120px"
+                android:id="@+id/headerLoginPage"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Email"
+                android:textColorHint="#ffffff"
+                android:id="@+id/email"
+                android:singleLine="false"
+                android:selectAllOnFocus="false" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Password"
+                android:textColorHint="#ffffff"
+                android:id="@+id/password"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:background="#59ABE3"
+            android:id="@+id/btn_login"
+            android:layout_marginTop="40px"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</RelativeLayout>
