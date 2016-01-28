@@ -107,14 +107,13 @@ public class LoginActivity extends AppCompatActivity {
             public void onResponse(Response<Users> response, Retrofit retrofit) {
                 int status = response.code();
                 String emailTemp,passTemp,authTemp;
-                //tv_respond.setText(String.valueOf(status));
+
                 Log.e("Response Status ", String.valueOf(status));
-                //this extract data from retrofit with for() loop
+
                 for (Users.UserItem user : response.body().getUsers()) {
                     emailTemp = user.getEmail();
                     passTemp = user.getPassword();
                     authTemp = user.getToken_authentication();
-                    Log.e("Response Status ", String.valueOf(status));
                     if (emailTemp.equals(emailIn.getText().toString())&&passTemp.equals(passIn.getText().toString())){
                             email = emailTemp;
                             pass = passTemp;
@@ -123,7 +122,6 @@ public class LoginActivity extends AppCompatActivity {
                     }else{
                         hasil =  "";
                     }
-
                 }
             }
 
@@ -131,7 +129,7 @@ public class LoginActivity extends AppCompatActivity {
 
             public void onFailure(Throwable t) {
 
-                //tv_respond.setText(String.valueOf(t));
+                Log.e("OnFailure ", t.toString());
 
             }
         });
@@ -144,8 +142,6 @@ public class LoginActivity extends AppCompatActivity {
             SharedPreferences set_shared_preference = getSharedPreferences("authentication", MODE_PRIVATE);
 
             SharedPreferences.Editor sp_editor = set_shared_preference.edit();
-            Log.e("token ", auth);
-            Log.e("Email ", email);
 
             sp_editor.putString("email", email);
             sp_editor.putString("token_authentication", auth);
