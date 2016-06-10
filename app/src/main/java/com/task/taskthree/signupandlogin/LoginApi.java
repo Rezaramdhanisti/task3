@@ -7,25 +7,23 @@ import retrofit.http.POST;
 import retrofit.http.PUT;
 import retrofit.http.Path;
 
-/**
- * Created by Personal on 1/27/2016.
- */
+
 public interface LoginApi {
-    @GET("/task/login")
+    @GET("/users")
     Call<Users> getUsers();
 
 
-    @GET("/task/login")
+    @GET("/users")
 
     Call<User> getUser(@Path("id") String user_id);
 
 
-    @PUT("/task/login")
+    @PUT("/users")
 
     Call<User> updateUser(@Path("id") int user_id, @Body User user);
 
 
-    @POST("/task/login")
+    @POST("/users")
 
     Call<User> saveUser(@Body User user);
 

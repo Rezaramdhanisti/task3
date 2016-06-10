@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.task.taskthree.signupandlogin.Home"
     tools:showIn="@layout/activity_home">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#E08283"
+        android:background="#F57C00"
         android:gravity="center">
 
         <TextView

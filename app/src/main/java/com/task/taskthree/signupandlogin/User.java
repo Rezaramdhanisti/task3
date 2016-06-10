@@ -1,8 +1,6 @@
 package com.task.taskthree.signupandlogin;
 
-/**
- * Created by Personal on 1/27/2016.
- */
+
 public class User {
     private int id;
     private String email;
